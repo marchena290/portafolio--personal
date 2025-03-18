@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sitio web de mi portafolio personal de desarrollador Front-End">
+    <meta name="author" content="Javier Marchena Gallo">
+    <meta name="keywords" content="Desarrollador Front-End, portafolio, HTML, CSS, Tailwind CSS, JavaScript">
+    <meta name="robots" content="index, follow">
+    <!---Meta etiquetas para redes sociales-->
+    <meta property="og:title" content="Portafolio de Javier Marchena Gallo">
+    <meta property="og:description" content="Explora mi portafolio como desarrollador Front-End, con proyectos de HTML, CSS y JavaScript">
+    <meta property="og:url" content="https://javiermarchena-dev.netlify.app/">
+    <meta property="og:type" content="website">
+    <title>Javier Marchena Gallo || Front-End Developer</title>
+    <!--CSS-->
+    <link rel="stylesheet" href="./output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="font-sans bg-white text-gray-800 dark:bg-gray-900 dark:text-white transition-colors duration-300">
+    <!-- NavBar -->
+    <nav class="bg-white dark:bg-gray-800 shadow-sm sticky top-0 z-50 transition-colors duration-300 ">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <button id="menuToggle" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-indigo-500 md:hidden">
+                        <span class="sr-only">Abrir menú principal</span>
+                        <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                    <div class="flex-shirk-0 flex items-center px-3">
+                        <span class="text-2xl font-bold text-gray-800 dark:text-white">JM</span>
+                    </div>
+                </div>
+                <div class="hidden md:flex md:ml-6 md:items-center">
+                    <a href="#" class="px-3 py-2 rounded-md text-sm font-medium text-gray-600 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white">Inicio</a>
+                    <a href="#proyectos" class="px-3 py-2 rounded-md text-sm font-medium text-gray-600 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white">Proyectos</a>
+                    <a href="#sobre-mi" class="px-3 py-2 rounded-md text-sm font-medium text-gray-600 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white">Sobre mí</a>
+                    <a href="#contacto" class="px-3 py-2 rounded-md text-sm font-medium text-gray-600 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white">Contacto</a>
+                </div>
+                <div class="flex items-center">
+                    <button id="darkModeToggle" class="p-2 rounded-md text-gray-700 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white focus:outline-none">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile menu -->
+        <div id="mobileMenu" class="hidden md:hidden">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <a href="#" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50 dark:text-gray-300 dark:hover:text-white dark:hover:bg-gray-700">Inicio</a>
+                <a href="#proyectos" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50 dark:text-gray-300 dark:hover:text-white dark:hover:bg-gray-700">Proyectos</a>
+                <a href="#sobre-mi" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50 dark:text-gray-300 dark:hover:text-white dark:hover:bg-gray-700">Sobre mí</a>
+                <a href="#contacto" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50 dark:text-gray-300 dark:hover:text-white dark:hover:bg-gray-700">Contacto</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero section  -->
+    <section class="bg-white dark:bg-gray-900 transition-colors duration-300">
+        <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-24 lg:px-8 flex flex-col items-center justify-center min-h-[cal(70vh-4rem)]">
+            <h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold text-gray-900 dark:text-white text-center leading-tight mb-4">
+                Javier Marchena Gallo
+            </h1>
+            <p class="mt-3 text-xl text-gray-500 dark:text-gray-400 text-center">Front-End Developer</p>
+            <p class="mt-3 text-lg text-gray-500 dark:text-gray-400 text-center mb-8">Estudiante de Ingeniería en Sistemas</p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4 w-full max-w-md ">
+                <a href="#proyectos" class="w[200px] px-8 py-3 border border-gray-300 dark:border-gray-700 text-base font-medium rounded-md text-gray-700 dark:text-gray-300 bg-white dark:bg-gray-800 hover:bg-gray-50 dark:hover:bg-gray-700 text-center mx-auto sm:mx-0">Ver Proyectos</a>
+                <a href="#contacto" class="w[200px] px-8 py-3 border boder-gray-800 dark:border-white text-base font-medium rounded-md text-white bg-gray-800 dark:bg-white dark:text-gray-800 hover:bg-gray-700 dark:hover:bg-gray-100 text-center mx-auto sm:mx-0">Contáctame</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technologies Section -->
+    <section class="bg-off-white dark:bg-gray-800 transition-colors duration-300">
+        <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
+            <h2 class="text-3xl font-extrabold text-gray-900 dark:text-white text-center mb-8">Mi Stack Tecnológico</h2>
+            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-8 justify-items-center">
+                <div class="flex flex-col items-center">
+                    <i class="fab fa-html5 text-5xl mb-2 text-orange-500"></i>
+                    <span class=" text-gray-600 dark:text-gray-400">HTML</span>
+                </div>
+                <div class="flex flex-col items-center">
+                    <i class="fab fa-css3 text-5xl mb-2 text-blue-500"></i>
+                    <span class=" text-gray-600 dark:text-gray-400">CSS</span>
+                </div>
+                <div class="flex flex-col items-center">
+                    <i class="fab fa-js text-5xl mb-2 text-yellow-500"></i>
+                    <span class=" text-gray-600 dark:text-gray-400">JavaScript</span>
+                </div>
+                <div class="flex flex-col items-center">
+                    <i class="fab fa-react text-5xl mb-2 text-blue-400"></i>
+                    <span class=" text-gray-600 dark:text-gray-400">React</span>
+                </div>
+                <div class="flex flex-col items-center">
+                    <i class="fab fa-angular text-5xl mb-2 text-red-600"></i>
+                    <span class=" text-gray-600 dark:text-gray-400">Angular</span>
+                </div>
+                <div class="flex flex-col items-center">
+                    <i class="fab fa-vuejs text-5xl mb-2 text-green-500"></i>
+                    <span class=" text-gray-600 dark:text-gray-400">Vue</span>
+                </div>
+                <div class="flex flex-col items-center">
+                    <i class="fab fa-bootstrap text-5xl mb-2 text-purple-500"></i>
+                    <span class=" text-gray-600 dark:text-gray-400">Bootstrap</span>
+                </div>
+                <div class="flex flex-col items-center">
+                    <svg class="w-12 h-12 mb-2 text-teal-500" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg"><path d="M13.5 11.1C15.3 3.9 19.8.3 27 .3c10.8 0 12.15 8.1 17.55 9.45 3.6.9 6.75-.45 9.45-4.05-1.8 7.2-6.3 10.8-13.5 10.8-10.8 0-12.15-8.1-17.55-9.45-3.6-.9-6.75.45-9.45 4.05zM0 27.3c1.8-7.2 6.3-10.8 13.5-10.8 10.8 0 12.15 8.1 17.55 9.45 3.6.9 6.75-.45 9.45-4.05-1.8 7.2-6.3 10.8-13.5 10.8-10.8 0-12.15-8.1-17.55-9.45-3.6-.9-6.75.45-9.45 4.05z" transform="translate(5 16)" fill="currentColor"/></svg>
+                    <span class=" text-gray-600 dark:text-gray-400">Tailwind</span>
+                </div>
+                <div class="flex flex-col items-center">
+                    <i class="fab fa-git-alt text-5xl mb-2 text-red-500"></i>
+                    <span class=" text-gray-600 dark:text-gray-400">Git</span>
+                </div>
+                <div class="flex flex-col items-center">
+                    <i class="fab fa-github text-5xl mb-2 text-gray-700 dark:text-gray-300"></i>
+                    <span class=" text-gray-600 dark:text-gray-400">GitHub</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="proyectos" class="bg-white dark:bg-gray-900 transition-colors duration-300 mb-12">
+            <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
+                <h2 class="text-3xl font-extrabold text-gray-900 dark:text-white text-center mb-3">Proyectos Destacados</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 px-9">
+                <div class="bg-white dark:bg-slate-800 rounded-lg overflow-hidden shadow-sm border border-gray-200 dark:border-gray-700">
+                    <a href="https://planet-gym-main.pages.dev/" target="_blank" rel="noopener noreferrer" title="Abrir el sitio web de Planet Gym en una nueva pestaña">
+                        <img src="./img/planet-gym.webp" height="300" width="400" class="w-fit h-auto object-cover" alt="Pagina web del sitio planet gym. Con diseño oscuro y detalles en rojo" loading="lazy">
+                    </a>
+                    <div class="p-6">
+                        <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-2">Planet Gym Website</h3>
+                        <p class="text-gray-600 dark:text-white mb-4">Landing page para el gimnasio planet gym con diseño oscuro elegante y detalles en rojo. Incluye sección de bienvenida, historia, instalaciones y precio de las suscripciones. Se uso HTML, Tailwind CSS, JavaScript y Alpine JS para funciones interactivas</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-300 text-xs font-medium px-2.5 py-0.5 rounded">HTML</span>
+                            <span class="bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-300 text-xs font-medium px-2.5 py-0.5 rounded">Tailwind</span>
+                            <span class="bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-300 text-xs font-medium px-2.5 py-0.5 rounded">JavaScript</span>
+                            <span class="bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-300 text-xs font-medium px-2.5 py-0.5 rounded">Alpine Js</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white dark:bg-gray-800 rounded-lg overflow-hidden shadow-sm border border-gray-200 dark:border-gray-700">
+                    <a href="https://techshopcr.netlify.app/" target="_blank" rel="noopener noreferrer" title="Abrir el sitio web de TechShop en una nueva pestaña">
+                        <img src="./img/tech-shop.webp" height="300" width="400" class="w-fit h-auto object-cover" alt="Pagina web del sitio TechShop, tienda en línea con diseño morderno en amarillo y negro, y carrusel destacado de productos" loading="lazy">
+                    </a>
+                    <div class="p-6">
+                        <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-2">TechShop</h3>
+                        <p class="text-gray-600 dark:text-white mb-4">Sitio web de una tienda en linea, con diseño morderno en amarillo y negro. Cuentas con páginas de inicio, historia, productos y contacto. Desarrollado con HTML Y Bootstrap</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-300 text-xs font-medium px-2.5 py-0.5 rounded">HTML</span>
+                            <span class="bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-300 text-xs font-medium px-2.5 py-0.5 rounded">Bootstrap</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white dark:bg-gray-800 rounded-lg overflow-hidden shadow-sm border border-gray-200 dark:border-gray-700">
+                    <a href="https://pacientes-veterinarios-marchena.netlify.app/" target="_blank" rel="noopener noreferrer" title="Abrir el sitio de Gestión de Pacientes Veterinarios en una nueva pestaña">
+                        <img src="./img/pacientes-veterinarios.webp" height="300" width="400" class="w-fit h-auto object-cover" alt="Aplicación web para gestión pacientes veterianos, con diseño minimalista y formulario funcional" loading="lazy">
+                    </a>
+                    <div class="p-6">
+                        <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-2">Gestión de Paciente Veterinarios</h3>
+                        <p class="text-gray-600 dark:text-white mb-4">Aplicación web para registrar, editar y eliminar información de paciente Veterinarios. Incluye un formulario funcional y un diseño minimalista y responsivo, diseñado con HTML, Tailwind CSS y JavaScript</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-300 text-xs font-medium px-2.5 py-0.5 rounded">HTML</span>
+                            <span class="bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-300 text-xs font-medium px-2.5 py-0.5 rounded">Tailwind</span>
+                            <span class="bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-300 text-xs font-medium px-2.5 py-0.5 rounded">JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="sobre-mi" class="bg-white dark:bg-gray-800 transition-colors duration-300">
+        <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
+            <h2 class="text-3xl font-extrabold text-gray-900 dark:text-white text-center mb-8">Sobre Mí</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="space-y-4 px-4">
+                    <button class="w-full text-left px-4 py-2 rounded-lg transition-colors duration-150 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 hover:bg-gray-100 dark:hover:bg-gray-700" onclick="showAnswer('quien')" id="quien-btn">
+                        <h3 class="text-lg font-medium text-gray-900 dark:text-white">¿Quién es Javier Marchena Gallo?</h3>
+                    </button>
+                    <button class="w-full text-left px-4 py-2 rounded-lg transition-colors duration-150 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 hover:bg-gray-100 dark:hover:bg-gray-700" onclick="showAnswer('trabajos')" id="trabajos-btn">
+                        <h3 class="text-lg font-medium text-gray-900 dark:text-white">¿Qué tipo de trabajos hago?</h3>
+                    </button>
+                    <button class="w-full text-left px-4 py-2 rounded-lg transition-colors duration-150 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 hover:bg-gray-100 dark:hover:bg-gray-700" onclick="showAnswer('actualizado')" id="actualizado-btn">
+                        <h3 class="text-lg font-medium text-gray-900 dark:text-white">¿Como me mantengo actualizado?</h3>
+                    </button>
+                    <button class="w-full text-left px-4 py-2 rounded-lg transition-colors duration-150 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 hover:bg-gray-100 dark:hover:bg-gray-700" onclick="showAnswer('certificaciones')" id="certificaciones-btn">
+                        <h3 class="text-lg font-medium text-gray-900 dark:text-white">¿Qué certificaciones tengo y cómo complementan mis estudios?</h3>
+                    </button>
+                </div>
+                <div id="answerContent" class="text-gray-600 dark:text-white px-4">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contacto" class="bg-white dark:bg-gray-900 transition-colors duration-300">
+        <div class="max-w-7xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <h2 class="text-3xl font-extrabold text-gray-900 dark:text-white sm:text-4xl">
+                    ¿Quieres trabajar conmigo?
+                </h2>
+                <p class="mt-4 text-lg leading-6 text-gray-500 dark:text-gray-400">
+                    Estoy siempre buscando nuevos proyectos y desafíos. Si tienes una idea o necesitas ayuda con tu proyecto, !contáctame! 
+                </p>
+                <a href="mailto:marchena452@gmail.com" class="mt-8 inline-flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-gray-800 hover:bg-gray-700 dark:bg-white dark:text-gray-800 dark:hover:bg-gray-100">
+                    Contáctame
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-white dark:bg-gray-800 border-t border-gray-200 dark:border-gray-700 transition-colors duration-300">
+        <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center">
+                <div>
+                    <p class="text-xl font-bold text-gray-900 dark:text-white">Javier Marchena Gallo</p>
+                    <p class="mt-2 text-sm text-gray-500 dark:text-gray-400">Front-End Developer</p>
+                    <p class="mt-2 text-sm text-gray-500 dark:text-gray-400">Estudiante de Ingeniería en Sistemas</p>
+                </div>
+                <div class="flex space-x-7 px-2">
+                    <a href="https://github.com/marchena290" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-gray-500 dark:hover:text-gray-300">
+                        <span class="sr-only">GitHub</span>
+                        <i class="fab fa-github text-2xl"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/javier-marchena-gallo-748b64343" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-gray-500 dark:hover:text-gray-300">
+                        <span class="sr-only">LinkedIn</span>
+                        <i class="fab fa-linkedin text-2xl"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="mt-8 border-t border-gray-200 dark:border-gray-700 pt-8 md:flex md:items-center md:justify-between">
+                <p class="mt-8 text-base text-gray-500 dark:text-gray-400 md:mt-0 md:order-1">
+                    &copy; 2025 Javier Marchena Gallo. Todos los derechos reservados.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./app.js"></script>
+</body>
+</html>
